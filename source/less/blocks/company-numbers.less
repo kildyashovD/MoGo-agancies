@@ -1,0 +1,43 @@
+.company-numbers {
+  background-color: #95e1d3;
+}
+
+.company-numbers__wrapper {
+  width: @general-wrapper;
+  margin: auto;
+}
+
+.company-numbers__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.company-numbers__item {
+  box-sizing: border-box;
+  width: 241px;
+  padding: 65px 34px;
+
+  text-align: center;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.company-numbers__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.company-numbers__count {
+  font-size: 72px;
+  line-height: 74px;
+  font-weight: bold;
+}
