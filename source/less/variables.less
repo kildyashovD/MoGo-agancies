@@ -37,3 +37,29 @@
   padding: 0 120px;
   color: #999999;
 }
+
+/*
+Для использования tooltip нужно родителю прописать
+Модификатор --tooltip и внутри него добавить следующий код
+
+Пример:
+&--tooltip {
+  .tooltip--show
+  }
+*/
+
+.tooltip--show {
+  &:hover {
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .tooltip::after {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+}
