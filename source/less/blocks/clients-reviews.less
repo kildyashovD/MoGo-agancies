@@ -1,0 +1,58 @@
+.clients-reviews {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align:left;
+}
+
+.clients-reviews__item {
+  display: flex;
+  width: 600px;
+  margin-bottom: 68px;
+}
+
+.clients-reviews__avatar-block {
+  width: 175px;
+
+  text-align: center;
+}
+
+.clients-reviews__text-block {
+  width: 425px;
+}
+
+.clients-reviews__name {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.clients-reviews__position {
+  position: relative;
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-style: italic;
+  font-weight: 400;
+  color: #333333;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    top: 45px;
+    left: 0;
+
+    background-color: #f38181;
+  }
+}
+
+.clients-reviews__text {
+  color: #999999;
+}
