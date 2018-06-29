@@ -1,1 +1,66 @@
-//TEST
+@general-wrapper: 1200px;
+
+.lead {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.heading {
+  position: relative;
+  margin: 0;
+  margin-bottom: 85px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -30px;
+
+    background-color: #f38181;
+  }
+}
+
+.text {
+  padding: 0 120px;
+  color: #999999;
+}
+
+/*
+Для использования tooltip нужно родителю прописать
+Модификатор --tooltip и внутри него добавить следующий код
+
+Пример:
+&--tooltip {
+  .tooltip--show
+  }
+*/
+
+.tooltip--show {
+  &:hover {
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .tooltip::after {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+}
