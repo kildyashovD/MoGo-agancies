@@ -401,10 +401,25 @@
         <p class="happy-clients__lead">Happy clients</p>
         <h2 class="happy-clients__heading">What people say</h2>
 
-        <div class="happy-clients__reviews clients-reviews">
+        <!-- TEMPLATE -->
+        <template id="happy-clients-reviews-template" style="display: none">
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/dix-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="#" alt="Client avatar">
+            </div>
+            <div class="clients-reviews__text-block">
+              <p class="clients-reviews__name">Client name</p>
+              <p class="clients-reviews__position">Client position</p>
+              <p class="clients-reviews__text">Client review</p>
+            </div>
+          </div>
+        </template>
+
+
+        <div class="happy-clients__reviews clients-reviews">
+        <!--  <div class="clients-reviews__item">
+            <div class="clients-reviews__avatar-block">
+              <img class="clients-reviews__avatar" src="img/dix-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Matthew Dix</p>
@@ -415,36 +430,36 @@
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/karvounis-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/karvounis-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Nick Karvounis</p>
               <p class="clients-reviews__position">Graphic Design</p>
-              <p class="clients-reviews__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="clients-reviews__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
           </div>
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/castillo-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/castillo-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Jaelynn Castillo</p>
               <p class="clients-reviews__position">Graphic Design</p>
-              <p class="clients-reviews__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="clients-reviews__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
           </div>
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/petrucci-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/petrucci-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Mike Petrucci</p>
               <p class="clients-reviews__position">Graphic Design</p>
               <p class="clients-reviews__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
@@ -658,6 +673,7 @@
     </div>
   </footer>
 
+  <script src="js/happy-clients.js" type="text/javascript"></script>
 </body>
 
 </html>

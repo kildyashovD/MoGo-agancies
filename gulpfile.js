@@ -47,8 +47,14 @@ gulp.task("serve", function() {
     ui: false
   });
 
+  gulp.watch("source/js/*.js", ["js"]).on("change", server.reload);
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+});
+
+gulp.task("js", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function() {
@@ -75,5 +81,5 @@ gulp.task("html", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "images", "html", done);
+  run("clean", "copy", "style", "images", "html", "js", done);
 });
