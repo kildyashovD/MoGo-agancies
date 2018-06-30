@@ -35,6 +35,12 @@
     <symbol viewBox="0 0 10 16" id="tumblr">
       <path d="M666.009,9791.15a9.526,9.526,0,0,1-1.849.67,7.785,7.785,0,0,1-1.789.2,4.728,4.728,0,0,1-1.718-.28,4.1,4.1,0,0,1-1.431-.79,2.892,2.892,0,0,1-.823-1.09,4.784,4.784,0,0,1-.228-1.68v-5.61h-2.164v-2.27a5.566,5.566,0,0,0,1.8-.88,4.389,4.389,0,0,0,1.075-1.37,6.3,6.3,0,0,0,.558-2.04H661.7v3.7h3.682v2.86H661.7v4.1a7.024,7.024,0,0,0,.086,1.73,1.494,1.494,0,0,0,.607.69,2.32,2.32,0,0,0,1.209.32,4.31,4.31,0,0,0,2.406-.79v2.53Z" transform="translate(-656 -9776)"/>
     </symbol>
+    <symbol viewBox="0 0 18 14" id="shopping-cart">
+      <path d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z" transform="translate(-1484.19 -37.563)"/>
+    </symbol>
+    <symbol viewBox="0 0 18 18" id="search">
+      <path d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z" transform="translate(-1544.19 -36.188)"/>
+    </symbol>
   </svg>
 
   <header class="page-header">
@@ -53,10 +59,14 @@
         </ul>
         <ul class="main-nav__list user-action">
           <li class="user-action__item">
-            <a class="user-action__link busket" href="#">Busket</a>
+            <a class="user-action__link busket" href="#">
+              <svg class="busket__svg" xmlns="http://www.w3.org/2000/svg" width="19" height="15"><use xlink:href="#shopping-cart"></use></svg>
+            </a>
           </li>
           <li class="user-action__item">
-            <a class="user-action__link search" href="#">Search</a>
+            <a class="user-action__link search" href="#">
+              <svg class="search__svg" xmlns="http://www.w3.org/2000/svg" width="19" height="19"><use xlink:href="#search"></use></svg>
+            </a>
           </li>
         </ul>
       </nav>
