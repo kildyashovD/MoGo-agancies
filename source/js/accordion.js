@@ -1,3 +1,5 @@
+'use strict';
+
 var accordionButton = document.querySelectorAll('.accordion__button');
 
 for (var i = 0; i < accordionButton.length; i++) {
