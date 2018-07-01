@@ -1,4 +1,6 @@
 .carousel-reviews {
+  min-height: 290px;
+
   background-color: #f8f8f8;
 
   &--bg-white {
@@ -8,17 +10,23 @@
 
 .carousel-reviews__wrapper {
   position: relative;
-  padding: 70px 0;
+  padding: 60px 0 36px 0;
   width: @general-wrapper;
   margin: auto;
 }
 
 .carousel-reviews__item {
-  display: flex;
-
-  &--display-none {
+  &--1 {
     display: none;
   }
+
+  &--2 {
+    display: none;
+  }
+/*
+  &--display-none {
+    display: none;
+  }*/
 }
 
 .carousel-reviews__avatar-block {
@@ -100,6 +108,14 @@
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
   }
+
+  &:hover::after {
+    border-color: #95e1d3;
+  }
+
+  &:active::after {
+    opacity: 0.5;
+  }
 }
 
 .carousel-reviews__next {
@@ -131,5 +147,13 @@
 
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
+  }
+
+  &:hover::after {
+    border-color: #95e1d3;
+  }
+
+  &:active::after {
+    opacity: 0.5;
   }
 }
