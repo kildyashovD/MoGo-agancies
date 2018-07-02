@@ -63,4 +63,18 @@
       transition: 0.3s;
     }
   }
+
+  &:focus {
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .tooltip::after {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
 }

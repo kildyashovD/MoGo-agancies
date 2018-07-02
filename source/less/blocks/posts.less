@@ -10,6 +10,14 @@
   text-align: left;
 }
 
+.posts__img-block {
+  display: block;
+}
+
+.posts__text-content {
+  padding-top: 18px;
+}
+
 .posts__date {
   box-sizing: border-box;
   max-width: 60px;
@@ -39,6 +47,7 @@
 .posts__heading {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 
   color: #333333;
@@ -102,5 +111,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  &--tooltip {
+    .tooltip--show
   }
 }
