@@ -35,6 +35,12 @@
     <symbol viewBox="0 0 10 16" id="tumblr">
       <path d="M666.009,9791.15a9.526,9.526,0,0,1-1.849.67,7.785,7.785,0,0,1-1.789.2,4.728,4.728,0,0,1-1.718-.28,4.1,4.1,0,0,1-1.431-.79,2.892,2.892,0,0,1-.823-1.09,4.784,4.784,0,0,1-.228-1.68v-5.61h-2.164v-2.27a5.566,5.566,0,0,0,1.8-.88,4.389,4.389,0,0,0,1.075-1.37,6.3,6.3,0,0,0,.558-2.04H661.7v3.7h3.682v2.86H661.7v4.1a7.024,7.024,0,0,0,.086,1.73,1.494,1.494,0,0,0,.607.69,2.32,2.32,0,0,0,1.209.32,4.31,4.31,0,0,0,2.406-.79v2.53Z" transform="translate(-656 -9776)"></path>
     </symbol>
+    <symbol viewBox="0 0 18 14" id="shopping-cart">
+      <path d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z" transform="translate(-1484.19 -37.563)"></path>
+    </symbol>
+    <symbol viewBox="0 0 18 18" id="search">
+      <path d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z" transform="translate(-1544.19 -36.188)"></path>
+    </symbol>
   </svg>
 
   <header class="page-header">
@@ -53,10 +59,14 @@
         </ul>
         <ul class="main-nav__list user-action">
           <li class="user-action__item">
-            <a class="user-action__link busket" href="#">Busket</a>
+            <a class="user-action__link busket" href="#">
+              <svg class="busket__svg" xmlns="http://www.w3.org/2000/svg" width="19" height="15"><use xlink:href="#shopping-cart"></use></svg>
+            </a>
           </li>
           <li class="user-action__item">
-            <a class="user-action__link search" href="#">Search</a>
+            <a class="user-action__link search" href="#">
+              <svg class="search__svg" xmlns="http://www.w3.org/2000/svg" width="19" height="19"><use xlink:href="#search"></use></svg>
+            </a>
           </li>
         </ul>
       </nav>
@@ -86,15 +96,27 @@
         <h2 class="about-us__heading">Story about us</h2>
         <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <ul class="about-us__img-block">
-          <li class="about-us__img-container">
-            <img class="about-us__img" src="img/about-us--team.jpg" alt="Super team">
+        <ul class="about-us__content">
+          <li class="about-us__item">
+            <div class="about-us__inner-layer"></div>
+            <div class="about-us__img-block">
+              <img class="about-us__img" src="img/about-us--team.jpg" alt="Super team">
+            </div>
+            <p class="about-us__text-block">Super team</p>
           </li>
-          <li class="about-us__img-container">
-            <img class="about-us__img" src="img/about-us--job.jpg" alt="Super job">
+          <li class="about-us__item">
+            <div class="about-us__inner-layer"></div>
+            <div class="about-us__img-block">
+              <img class="about-us__img" src="img/about-us--job.jpg" alt="Super job">
+            </div>
+            <p class="about-us__text-block">Super job</p>
           </li>
-          <li class="about-us__img-container">
-            <img class="about-us__img" src="img/about-us--office.jpg" alt="Super office">
+          <li class="about-us__item">
+            <div class="about-us__inner-layer"></div>
+            <div class="about-us__img-block">
+              <img class="about-us__img" src="img/about-us--office.jpg" alt="Super office">
+            </div>
+            <p class="about-us__text-block">Super office</p>
           </li>
         </ul>
       </div>
@@ -128,27 +150,27 @@
         <h2 class="amazing-services__heading">Amazing services</h2>
 
         <ul class="amazing-services__list">
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--photography amazing-services__item--border-b">
             <h3 class="amazing-services__sub-heading">Photography</h3>
             <p class="amazing-services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--web-design amazing-services__item--border-b">
             <h3 class="amazing-services__sub-heading">Web design</h3>
             <p class="amazing-services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--creativity amazing-services__item--border-b">
             <h3 class="amazing-services__sub-heading">Creativity</h3>
             <p class="amazing-services__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--seo">
             <h3 class="amazing-services__sub-heading">Seo</h3>
             <p class="amazing-services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </li>
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--frontend">
             <h3 class="amazing-services__sub-heading">CSS/HTML</h3>
             <p class="amazing-services__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
           </li>
-          <li class="amazing-services__item">
+          <li class="amazing-services__item amazing-services__item--digital">
             <h3 class="amazing-services__sub-heading">Digital</h3>
             <p class="amazing-services__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </li>
@@ -176,13 +198,13 @@
             <img class="accordion__img" src="img/accordion-img.jpg" alt="Team">
           </div>
           <div class="accordion__text-block">
-            <button class="accordion__button" type="button" name="button">Photography</button>
-            <p class="accordion__item accordion__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="accordion__button accordion__button--photography" type="button" name="button">Photography</button>
+            <p class="accordion__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <button class="accordion__button" type="button" name="button">Creativity</button>
+            <button class="accordion__button accordion__button--creativity" type="button" name="button">Creativity</button>
             <p class="accordion__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <button class="accordion__button" type="button" name="button">Web design</button>
+            <button class="accordion__button accordion__button--web-design" type="button" name="button">Web design</button>
             <p class="accordion__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -191,7 +213,7 @@
 
     <section class="carousel-reviews">
       <div class="carousel-reviews__wrapper">
-        <div class="carousel-reviews__item">
+        <div class="carousel-reviews__item carousel-reviews__item--1">
           <div class="carousel-reviews__avatar-block carousel-reviews__avatar-block--false">
             <img class="carousel-reviews__author-avatar carousel-reviews__author-avatar--false" src="img/no-name-avatar.png" alt="Avatar">
           </div>
@@ -202,13 +224,13 @@
             <p class="carousel-reviews__author-name">Jon Doe</p>
           </div>
         </div>
-        <div class="carousel-reviews__item carousel-reviews__item--display-none">
+        <div class="carousel-reviews__item carousel-reviews__item--1">
           <div class="carousel-reviews__avatar-block">
             <img class="carousel-reviews__author-avatar" src="img/earle-avatar.png" alt="Avatar">
           </div>
           <div class="carousel-reviews__text-block">
             <p class="carousel-reviews__text carousel-reviews__text--active">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+              “Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
             </p>
             <p class="carousel-reviews__author-name">Joshua Earle</p>
           </div>
@@ -227,13 +249,21 @@
         <div class="about-team__members members">
           <div class="members__item">
             <div class="members__img-block">
+              <div class="members__inner-layer"></div>
               <img class="members__avatar" src="img/members-matthew.jpg" alt="Matthew">
-            </div>
-            <div class="members__social-block">
-              <a class="members__social-link" href="#">Facebook</a>
-              <a class="members__social-link" href="#">Twitter</a>
-              <a class="members__social-link" href="#">Pinterest</a>
-              <a class="members__social-link" href="#">Instagram</a>
+              <div class="members__social-block">
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="8" height="16"><use xlink:href="#facebook"></use></svg></a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13"><use xlink:href="#twitter"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="16"><use xlink:href="#pinterest"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><use xlink:href="#instagram"></use></svg>
+                </a>
+              </div>
             </div>
             <div class="members__text-content">
               <p class="members__name">Matthew Dix</p>
@@ -243,13 +273,21 @@
 
           <div class="members__item">
             <div class="members__img-block">
+              <div class="members__inner-layer"></div>
               <img class="members__avatar" src="img/members-campbell.jpg" alt="Campbell">
-            </div>
-            <div class="members__social-block">
-              <a class="members__social-link" href="#">Facebook</a>
-              <a class="members__social-link" href="#">Twitter</a>
-              <a class="members__social-link" href="#">Pinterest</a>
-              <a class="members__social-link" href="#">Instagram</a>
+              <div class="members__social-block">
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="8" height="16"><use xlink:href="#facebook"></use></svg></a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13"><use xlink:href="#twitter"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="16"><use xlink:href="#pinterest"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><use xlink:href="#instagram"></use></svg>
+                </a>
+              </div>
             </div>
             <div class="members__text-content">
               <p class="members__name">Christopher Campbell</p>
@@ -259,13 +297,21 @@
 
           <div class="members__item">
             <div class="members__img-block">
+              <div class="members__inner-layer"></div>
               <img class="members__avatar" src="img/members-fertig.jpg" alt="Fertig">
-            </div>
-            <div class="members__social-block">
-              <a class="members__social-link" href="#">Facebook</a>
-              <a class="members__social-link" href="#">Twitter</a>
-              <a class="members__social-link" href="#">Pinterest</a>
-              <a class="members__social-link" href="#">Instagram</a>
+              <div class="members__social-block">
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="8" height="16"><use xlink:href="#facebook"></use></svg></a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13"><use xlink:href="#twitter"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="16"><use xlink:href="#pinterest"></use></svg>
+                </a>
+                <a class="members__social-link" href="#">
+                  <svg class="members__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><use xlink:href="#instagram"></use></svg>
+                </a>
+              </div>
             </div>
             <div class="members__text-content">
               <p class="members__name">Michael Fertig</p>
@@ -299,6 +345,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
             <div class="works__item">
               <div class="works__img-block">
@@ -308,6 +355,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
           </div>
 
@@ -320,6 +368,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
             <div class="works__item">
               <div class="works__img-block">
@@ -329,6 +378,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
           </div>
 
@@ -341,6 +391,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
           </div>
 
@@ -353,6 +404,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
             <div class="works__item">
               <div class="works__img-block">
@@ -362,6 +414,7 @@
                 <p class="works__lead">creatively designed</p>
                 <p class="works__description">Lorem ipsum dolor sit</p>
               </div>
+              <div class="works__inner-layer"></div>
             </div>
           </div>
       </div>
@@ -369,18 +422,18 @@
 
     <section class="carousel-reviews carousel-reviews--bg-white">
       <div class="carousel-reviews__wrapper">
-        <div class="carousel-reviews__item">
+        <div class="carousel-reviews__item carousel-reviews__item--2">
           <div class="carousel-reviews__avatar-block">
             <img class="carousel-reviews__author-avatar" src="img/earle-avatar.png" alt="Avatar">
           </div>
           <div class="carousel-reviews__text-block">
             <p class="carousel-reviews__text carousel-reviews__text--active">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+              “Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
             </p>
             <p class="carousel-reviews__author-name">Joshua Earle</p>
           </div>
         </div>
-        <div class="carousel-reviews__item carousel-reviews__item--display-none">
+        <div class="carousel-reviews__item carousel-reviews__item--2">
           <div class="carousel-reviews__avatar-block carousel-reviews__avatar-block--false">
             <img class="carousel-reviews__author-avatar carousel-reviews__author-avatar--false" src="img/no-name-avatar.png" alt="Avatar">
           </div>
@@ -401,10 +454,25 @@
         <p class="happy-clients__lead">Happy clients</p>
         <h2 class="happy-clients__heading">What people say</h2>
 
-        <div class="happy-clients__reviews clients-reviews">
+        <!-- TEMPLATE -->
+        <template id="happy-clients-reviews-template" style="display: none">
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/dix-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="#" alt="Client avatar">
+            </div>
+            <div class="clients-reviews__text-block">
+              <p class="clients-reviews__name">Client name</p>
+              <p class="clients-reviews__position">Client position</p>
+              <p class="clients-reviews__text">Client review</p>
+            </div>
+          </div>
+        </template>
+
+
+        <div class="happy-clients__reviews clients-reviews">
+        <!--<div class="clients-reviews__item">
+            <div class="clients-reviews__avatar-block">
+              <img class="clients-reviews__avatar" src="img/dix-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Matthew Dix</p>
@@ -415,36 +483,36 @@
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/karvounis-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/karvounis-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Nick Karvounis</p>
               <p class="clients-reviews__position">Graphic Design</p>
-              <p class="clients-reviews__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="clients-reviews__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
           </div>
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/castillo-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/castillo-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Jaelynn Castillo</p>
               <p class="clients-reviews__position">Graphic Design</p>
-              <p class="clients-reviews__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="clients-reviews__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
           </div>
 
           <div class="clients-reviews__item">
             <div class="clients-reviews__avatar-block">
-              <img class="clients-reviews__avatar" src="img/petrucci-avatar.png" alt="Client avater">
+              <img class="clients-reviews__avatar" src="img/petrucci-avatar.png" alt="Client avatar">
             </div>
             <div class="clients-reviews__text-block">
               <p class="clients-reviews__name">Mike Petrucci</p>
               <p class="clients-reviews__position">Graphic Design</p>
               <p class="clients-reviews__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
@@ -456,46 +524,46 @@
 
         <div class="blog__posts posts">
           <div class="posts__item">
-            <div class="posts__img-block">
+            <a class="posts__img-block" href="#">
               <img class="posts__img" src="img/post-1.jpg" alt="Post 1">
-            </div>
+            </a>
             <div class="posts__text-content">
               <p class="posts__date"><span class="posts__date-number">15</span> Jan</p>
-              <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+              <a class="posts__heading" href="#">Lorem ipsum dolor sit amet</a>
               <p class="posts__preview">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div class="posts__stats">
                 <p class="posts__views posts__views--tooltip">542<span class="tooltip">Views</span></p>
-                <a class="posts__comments" href="#">17</a>
+                <a class="posts__comments posts__comments--tooltip" href="#">17<span class="tooltip">Comments</span></a>
               </div>
             </div>
           </div>
 
           <div class="posts__item">
-            <div class="posts__img-block">
+            <a class="posts__img-block" href="#">
               <img class="posts__img" src="img/post-2.jpg" alt="Post 2">
-            </div>
+            </a>
             <div class="posts__text-content">
               <p class="posts__date"><span class="posts__date-number">14</span> Jan</p>
-              <h3 class="posts__heading">sed do eiusmod tempor</h3>
+              <a class="posts__heading" href="#">sed do eiusmod tempor</a>
               <p class="posts__preview">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div class="posts__stats">
                 <p class="posts__views posts__views--tooltip">992<span class="tooltip">Views</span></p>
-                <a class="posts__comments" href="#">42</a>
+                <a class="posts__comments posts__comments--tooltip" href="#">42<span class="tooltip">Comments</span></a>
               </div>
             </div>
           </div>
 
           <div class="posts__item">
-            <div class="posts__img-block">
+            <a class="posts__img-block" href="#">
               <img class="posts__img" src="img/post-3.jpg" alt="Post 3">
-            </div>
+            </a>
             <div class="posts__text-content">
               <p class="posts__date"><span class="posts__date-number">13</span> Jan</p>
-              <h3 class="posts__heading">incididunt ut labore et dolore</h3>
+              <a class="posts__heading" href="#">incididunt ut labore et dolore</a>
               <p class="posts__preview">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div class="posts__stats">
                 <p class="posts__views posts__views--tooltip">1560<span class="tooltip">Views</span></p>
-                <a class="posts__comments" href="#">98</a>
+                <a class="posts__comments posts__comments--tooltip" href="#">98<span class="tooltip">Comments</span></a>
               </div>
             </div>
           </div>
@@ -578,31 +646,31 @@
         <div class="blog__post-preview post-preview">
 
           <div class="post-preview__item">
-            <div class="post-preview__img-block">
+            <a class="post-preview__img-block" href="#">
               <img class="post-preview__img" src="img/post-prevew-1.jpg" alt="Post 1">
-            </div>
+            </a>
             <div class="post-preview__text-content">
-              <h3 class="post-preview__heading">Lorem ipsum 	dolor sit amet, consectetur adipiscing</h3>
+              <a class="post-preview__heading" href="#">Lorem ipsum 	dolor sit amet, consectetur adipiscing</a>
               <p class="post-preview__date">13 Jan, 2016</p>
             </div>
           </div>
 
           <div class="post-preview__item">
-            <div class="post-preview__img-block">
+            <a class="post-preview__img-block" href="#">
               <img class="post-preview__img" src="img/post-prevew-2.jpg" alt="Post 1">
-            </div>
+            </a>
             <div class="post-preview__text-content">
-              <h3 class="post-preview__heading">Consectetur adipiscing elit, sed do eiusmod tempor</h3>
+              <a class="post-preview__heading" href="#">Consectetur adipiscing elit, sed do eiusmod tempor</a>
               <p class="post-preview__date">12 Jan, 2016</p>
             </div>
           </div>
 
           <div class="post-preview__item">
-            <div class="post-preview__img-block">
+            <a class="post-preview__img-block" href="#">
               <img class="post-preview__img" src="img/post-prevew-3.jpg" alt="Post 1">
-            </div>
+            </a>
             <div class="post-preview__text-content">
-              <h3 class="post-preview__heading">sed do eiusmod tempor incididunt ut labore</h3>
+              <a class="post-preview__heading" href="#">sed do eiusmod tempor incididunt ut labore</a>
               <p class="post-preview__date">11 Jan, 2016</p>
             </div>
           </div>
@@ -654,10 +722,13 @@
 
         <a class="instagram__link" href="#">View more photos</a>
       </div>
-      <p class="page-footer__rights">© 2016 MoGo free PSD template by Laaqiq</p>
+      <p class="page-footer__rights">© 2016 MoGo free PSD template by <a class="page-footer__rights-link" href="#">Laaqiq</a></p>
     </div>
   </footer>
 
+  <script src="js/happy-clients.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/carousel-reviews.js"></script>
 </body>
 
 </html>
