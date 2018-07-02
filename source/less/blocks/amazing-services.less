@@ -26,12 +26,120 @@
 
 .amazing-services__item {
   box-sizing: border-box;
+
+  position: relative;
   width: 400px;
   padding-top: 40px;
   padding-left: 88px;
   padding-bottom: 50px;
 
   text-align: left;
+
+  &--photography {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 58px;
+      left: 35px;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/alarm.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--web-design {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 52px;
+      left: 40px;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/web-design.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--creativity {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 58px;
+      left: 40px;
+      width: 36px;
+      height: 32px;
+
+      background-image: url("../img/comp.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--seo {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 58px;
+      left: 40px;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/book.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--frontend {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 58px;
+      left: 40px;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/home.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--digital {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 58px;
+      left: 40px;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/image.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--border-b {
+    border-bottom: 2px solid #e5e5e5;
+  }
 }
 
 .amazing-services__sub-heading {

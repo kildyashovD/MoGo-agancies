@@ -1,1 +1,18 @@
-//test
+.busket__svg {
+  fill: #ffffff;
+
+  transition: transform 0.3s;
+}
+
+.busket {
+  &:hover .busket__svg {
+    transform: scale(1.3);
+    transition: transform 0.3s;
+
+    fill: #fce38a;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
