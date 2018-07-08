@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
 .lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -9,12 +9,13 @@
 .heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .heading::after {
   content: "";
@@ -178,7 +179,7 @@ input[type="radio"].visually-hidden {
 }
 .page-preview {
   margin-top: -76px;
-  min-height: 1000px;
+  min-height: 1011px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 133, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url("../img/page-preview--bg.jpg");
   background-image: linear-gradient(to bottom, rgba(243, 133, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../img/page-preview--bg.jpg");
   background-size: cover;
@@ -196,19 +197,22 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 .page-preview__text {
+  margin-bottom: 45px;
   font-size: 72px;
+  line-height: 74px;
   color: #ffffff;
   font-family: "Kaushan Script", cursive;
 }
 .page-preview__lead {
   position: relative;
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 109px;
   font-size: 150px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 140px;
+  letter-spacing: -5px;
   font-family: "Montserrat", sans-serif;
 }
 .page-preview__lead::after {
@@ -216,7 +220,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 60px;
   height: 3px;
-  bottom: -70px;
+  bottom: -58px;
   left: 568px;
   background-color: #ffffff;
 }
@@ -225,7 +229,6 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   display: block;
   margin: auto;
-  margin-top: 120px;
   width: 160px;
   height: 40px;
   padding: 0 16px;
@@ -265,14 +268,18 @@ input[type="radio"].visually-hidden {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 18px;
   opacity: 0.5;
+}
+.slider-control__link span {
+  font-size: 24px;
 }
 .slider-control__link::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 100%;
   height: 3px;
   background-color: #ffffff;
 }
@@ -293,15 +300,16 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 .user-nav__item {
-  margin-top: 37px;
+  margin-top: 33px;
   margin-right: 55px;
+  letter-spacing: 1px;
 }
 .user-nav__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
   height: 100%;
-  padding-bottom: 12px;
+  padding-bottom: 4px;
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
@@ -341,14 +349,16 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 241px;
-  padding: 65px 34px;
+  padding: 79px 34px 69px 34px;
   text-align: center;
+  line-height: 44px;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 .company-numbers__item:first-child {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 .company-numbers__text {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #ffffff;
@@ -368,7 +378,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -376,12 +386,13 @@ input[type="radio"].visually-hidden {
 .about-us__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .about-us__heading::after {
   content: "";
@@ -394,7 +405,7 @@ input[type="radio"].visually-hidden {
   background-color: #f38181;
 }
 .about-us__text {
-  margin-bottom: 100px;
+  margin-bottom: 96px;
   padding: 0 120px;
   color: #999999;
 }
@@ -493,12 +504,12 @@ input[type="radio"].visually-hidden {
 .amazing-services__wrapper {
   width: 1200px;
   margin: auto;
-  padding: 110px 0 65px 0;
+  padding: 109px 0 65px 0;
   text-align: center;
 }
 .amazing-services__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -506,12 +517,13 @@ input[type="radio"].visually-hidden {
 .amazing-services__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .amazing-services__heading::after {
   content: "";
@@ -538,16 +550,16 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   position: relative;
   width: 400px;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-left: 88px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   text-align: left;
 }
 .amazing-services__item--photography::before {
   content: "";
   position: absolute;
-  top: 58px;
-  left: 35px;
+  top: 25px;
+  left: 29px;
   width: 32px;
   height: 32px;
   background-image: url("../img/alarm.svg");
@@ -558,11 +570,11 @@ input[type="radio"].visually-hidden {
 .amazing-services__item--web-design::before {
   content: "";
   position: absolute;
-  top: 52px;
-  left: 40px;
+  top: 25px;
+  left: 29px;
   width: 32px;
   height: 32px;
-  background-image: url("../img/web-design.svg");
+  background-image: url("../img/line-graph.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -570,10 +582,10 @@ input[type="radio"].visually-hidden {
 .amazing-services__item--creativity::before {
   content: "";
   position: absolute;
-  top: 58px;
-  left: 40px;
-  width: 36px;
-  height: 32px;
+  top: 25px;
+  left: 29px;
+  width: 32px;
+  height: 30px;
   background-image: url("../img/comp.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -582,8 +594,8 @@ input[type="radio"].visually-hidden {
 .amazing-services__item--seo::before {
   content: "";
   position: absolute;
-  top: 58px;
-  left: 40px;
+  top: 49px;
+  left: 29px;
   width: 32px;
   height: 32px;
   background-image: url("../img/book.svg");
@@ -594,8 +606,8 @@ input[type="radio"].visually-hidden {
 .amazing-services__item--frontend::before {
   content: "";
   position: absolute;
-  top: 58px;
-  left: 40px;
+  top: 49px;
+  left: 29px;
   width: 32px;
   height: 32px;
   background-image: url("../img/home.svg");
@@ -606,8 +618,8 @@ input[type="radio"].visually-hidden {
 .amazing-services__item--digital::before {
   content: "";
   position: absolute;
-  top: 58px;
-  left: 40px;
+  top: 49px;
+  left: 29px;
   width: 32px;
   height: 32px;
   background-image: url("../img/image.svg");
@@ -616,9 +628,11 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 .amazing-services__item--border-b {
+  padding-top: 4px;
   border-bottom: 2px solid #e5e5e5;
 }
 .amazing-services__sub-heading {
+  margin-bottom: 11px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -626,6 +640,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .amazing-services__text {
+  margin-top: 0;
   color: #999999;
 }
 .unique-design {
@@ -640,12 +655,12 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 1200px;
   margin: auto;
-  padding-top: 110px;
+  padding-top: 120px;
   text-align: center;
 }
 .unique-design__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -653,12 +668,13 @@ input[type="radio"].visually-hidden {
 .unique-design__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 46px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .unique-design__heading::after {
   content: "";
@@ -672,11 +688,12 @@ input[type="radio"].visually-hidden {
 }
 .unique-design__img-tablet {
   margin-bottom: -7px;
+  margin-left: -54px;
 }
 .unique-design__img-mobile {
   position: absolute;
-  bottom: -80px;
-  right: 217px;
+  bottom: -92px;
+  right: 231px;
   -webkit-transition: -webkit-transform ease 0.3s;
   transition: -webkit-transform ease 0.3s;
   transition: transform ease 0.3s;
@@ -698,7 +715,7 @@ input[type="radio"].visually-hidden {
 }
 .about-service__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -706,12 +723,13 @@ input[type="radio"].visually-hidden {
 .about-service__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .about-service__heading::after {
   content: "";
@@ -735,12 +753,9 @@ input[type="radio"].visually-hidden {
 }
 .accordion__img-block {
   width: 50%;
-  padding-right: 30px;
 }
 .accordion__img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-right: 32px;
 }
 .accordion__text-block {
   width: 50%;
@@ -751,7 +766,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 100%;
   margin-top: 10px;
-  padding: 25px 25px 25px 65px;
+  padding: 23px 25px 17px 56px;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -767,8 +782,8 @@ input[type="radio"].visually-hidden {
 .accordion__button::after {
   content: "";
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 18px;
+  right: 23px;
   width: 15px;
   height: 15px;
   -webkit-transform: rotate(315deg);
@@ -783,15 +798,15 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 .accordion__button--active::after {
-  top: 30px;
+  top: 26px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 .accordion__button--photography::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: 16px;
+  left: 12px;
   width: 32px;
   height: 32px;
   background-image: url("../img/photography.svg");
@@ -802,8 +817,8 @@ input[type="radio"].visually-hidden {
 .accordion__button--creativity::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: 16px;
+  left: 12px;
   width: 32px;
   height: 32px;
   background-image: url("../img/creativity.svg");
@@ -814,8 +829,8 @@ input[type="radio"].visually-hidden {
 .accordion__button--web-design::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: 16px;
+  left: 12px;
   width: 32px;
   height: 32px;
   background-image: url("../img/web-design.svg");
@@ -829,8 +844,9 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   margin: 0;
   padding: 20px;
-  max-height: 156px;
-  overflow: scroll;
+  max-height: 180px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-style: italic;
   color: #999999;
   border: 1px solid #e5e5e5;
@@ -844,10 +860,20 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 .carousel-reviews__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   padding: 60px 0 36px 0;
   width: 1200px;
   margin: auto;
+}
+.carousel-reviews__wrapper--height {
+  min-height: 440px;
+  padding: 123px 0 123px 0;
+}
+.carousel-reviews__wrapper--height .carousel-reviews__next,
+.carousel-reviews__wrapper--height .carousel-reviews__previous {
+  top: 44%;
 }
 .carousel-reviews__item--1 {
   display: none;
@@ -857,12 +883,14 @@ input[type="radio"].visually-hidden {
 }
 .carousel-reviews__avatar-block {
   position: relative;
-  width: 300px;
+  width: 344px;
 }
 .carousel-reviews__avatar-block--false::after {
   content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 40px;
   width: 150px;
   height: 150px;
@@ -871,35 +899,50 @@ input[type="radio"].visually-hidden {
 .carousel-reviews__text-block {
   width: 900px;
   padding-right: 100px;
-  padding-left: 10px;
+  padding-left: 17px;
+  padding-top: 10px;
 }
 .carousel-reviews__text {
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: 400;
   font-style: italic;
   color: #999999;
 }
 .carousel-reviews__author-avatar {
   margin-top: -23px;
-  margin-left: 47px;
+  margin-left: 78px;
 }
 .carousel-reviews__author-avatar--false {
-  margin-left: 128px;
+  margin-left: 152px;
   margin-top: 53px;
 }
 .carousel-reviews__author-name {
+  position: relative;
+  padding-left: 70px;
+  margin: 0;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   line-height: 30px;
+}
+.carousel-reviews__author-name::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  top: 15px;
+  left: 2px;
+  background-color: #f38181;
 }
 .carousel-reviews__previous {
   position: absolute;
   width: 25px;
   height: 25px;
   padding: 0;
-  top: 140px;
-  left: 0;
+  top: 128px;
+  left: 16px;
   font-size: 0;
   background-color: transparent;
   border: none;
@@ -928,8 +971,8 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   padding: 0;
-  top: 140px;
-  right: 0;
+  top: 128px;
+  right: 29px;
   font-size: 0;
   background-color: transparent;
   border: none;
@@ -956,12 +999,12 @@ input[type="radio"].visually-hidden {
 .about-team__wrapper {
   width: 1200px;
   margin: auto;
-  padding: 100px 0 118px 0;
+  padding: 96px 0 96px 0;
   text-align: center;
 }
 .about-team__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -969,12 +1012,13 @@ input[type="radio"].visually-hidden {
 .about-team__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .about-team__heading::after {
   content: "";
@@ -987,7 +1031,7 @@ input[type="radio"].visually-hidden {
   background-color: #f38181;
 }
 .about-team__text {
-  margin-bottom: 90px;
+  margin-bottom: 87px;
   padding: 0 120px;
   color: #999999;
 }
@@ -1114,15 +1158,19 @@ input[type="radio"].visually-hidden {
   margin: auto;
   padding: 66px 0;
 }
+.brands__logo {
+  display: block;
+  margin: auto;
+}
 .about-work__wrapper {
   width: 1200px;
   margin: auto;
-  padding: 100px 0;
+  padding: 103px 0 84px 0;
   text-align: center;
 }
 .about-work__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -1130,12 +1178,13 @@ input[type="radio"].visually-hidden {
 .about-work__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .about-work__heading::after {
   content: "";
@@ -1238,7 +1287,7 @@ input[type="radio"].visually-hidden {
 }
 .happy-clients__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -1246,12 +1295,13 @@ input[type="radio"].visually-hidden {
 .happy-clients__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 126px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .happy-clients__heading::after {
   content: "";
@@ -1276,11 +1326,14 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   width: 600px;
-  margin-bottom: 68px;
+  margin-bottom: 65px;
 }
 .clients-reviews__avatar-block {
   width: 175px;
   text-align: center;
+}
+.clients-reviews__avatar {
+  margin-left: 13px;
 }
 .clients-reviews__text-block {
   width: 425px;
@@ -1289,6 +1342,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  line-height: 33px;
   font-weight: bold;
   text-transform: uppercase;
   color: #333333;
@@ -1296,7 +1350,7 @@ input[type="radio"].visually-hidden {
 .clients-reviews__position {
   position: relative;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
   font-style: italic;
   font-weight: 400;
   color: #333333;
@@ -1306,22 +1360,25 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 60px;
   height: 3px;
-  top: 45px;
-  left: 0;
+  top: 37px;
+  left: 3px;
   background-color: #f38181;
 }
 .clients-reviews__text {
+  margin: 0;
+  padding-left: 2px;
+  padding-right: 45px;
   color: #999999;
 }
 .blog__wrapper {
   width: 1200px;
   margin: auto;
-  padding: 100px 0 118px 0;
+  padding: 110px 0 112px 0;
   text-align: center;
 }
 .blog__lead {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 26px;
   font-family: "Kaushan Script", cursive;
@@ -1329,12 +1386,13 @@ input[type="radio"].visually-hidden {
 .blog__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 85px;
+  margin-bottom: 87px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: -0.6px;
 }
 .blog__heading::after {
   content: "";
@@ -1347,7 +1405,7 @@ input[type="radio"].visually-hidden {
   background-color: #f38181;
 }
 .page-footer__column .blog__heading {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -1371,7 +1429,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .posts__text-content {
-  padding-top: 18px;
+  padding-top: 5px;
 }
 .posts__date {
   -webkit-box-sizing: border-box;
@@ -1396,6 +1454,8 @@ input[type="radio"].visually-hidden {
   font-style: normal;
 }
 .posts__heading {
+  display: block;
+  margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -1403,6 +1463,8 @@ input[type="radio"].visually-hidden {
   color: #333333;
 }
 .posts__preview {
+  margin: 0;
+  margin-bottom: 12px;
   padding-right: 27px;
   padding-bottom: 20px;
   color: #999999;
@@ -1411,7 +1473,8 @@ input[type="radio"].visually-hidden {
 .posts__comments,
 .posts__views {
   display: inline-block;
-  margin-right: 20px;
+  margin: 0;
+  margin-right: 9px;
   padding-left: 25px;
   color: #999999;
   font-style: italic;
@@ -1462,7 +1525,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 4px;
-  left: 0;
+  left: 3px;
   width: 16px;
   height: 14px;
   background-image: url("../img/speech.svg");
@@ -1553,8 +1616,8 @@ input[type="radio"].visually-hidden {
   margin-left: -12px;
   top: -44px;
   left: 50%;
-  width: 23px;
-  height: 31px;
+  width: 20px;
+  height: 27px;
   background-image: url("../img/map-pin.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1565,10 +1628,13 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 60px;
   height: 3px;
-  bottom: -25px;
+  bottom: -18px;
   left: 50%;
   margin-left: -30px;
   background-color: #f38181;
+}
+.page-footer {
+  background-color: #f8f8f8;
 }
 .page-footer__wrapper {
   display: -webkit-box;
@@ -1596,17 +1662,21 @@ input[type="radio"].visually-hidden {
 }
 .page-footer__logo {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 28px;
 }
 .page-footer__description {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 41px;
   padding-right: 15px;
   color: #999999;
 }
+.page-footer__social {
+  margin-bottom: 16px;
+}
 .page-footer__rights {
   margin: 0;
-  padding: 24px 0;
+  margin-top: 40px;
+  padding: 18px 0 15px 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1624,7 +1694,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
 }
 .social__list {
   display: -webkit-box;
@@ -1641,7 +1710,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 15px;
+  margin-left: 16px;
 }
 .social__link {
   -webkit-box-sizing: border-box;
@@ -1671,7 +1740,7 @@ input[type="radio"].visually-hidden {
 }
 .social__lead {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #e5e5e5;
 }
 .subscribe-form__email-input {
@@ -1712,13 +1781,20 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 0.8px;
+}
+.subscribe-form__button:hover {
+  opacity: 0.5;
+}
+.subscribe-form__button:active {
+  opacity: 0.3;
 }
 .post-preview__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .post-preview__img-block {
   width: 120px;
@@ -1750,6 +1826,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 12px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1761,7 +1838,7 @@ input[type="radio"].visually-hidden {
 }
 .instagram__heading {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
