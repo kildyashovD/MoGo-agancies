@@ -9,10 +9,21 @@
 }
 
 .carousel-reviews__wrapper {
+  box-sizing: border-box;
   position: relative;
   padding: 60px 0 36px 0;
   width: @general-wrapper;
   margin: auto;
+
+  &--height {
+    min-height: 440px;
+    padding: 123px 0 123px 0;
+
+    .carousel-reviews__next,
+    .carousel-reviews__previous {
+      top: 44%;
+    }
+  }
 }
 
 .carousel-reviews__item {
@@ -27,14 +38,15 @@
 
 .carousel-reviews__avatar-block {
   position: relative;
-  width: 300px;
+  width: 344px;
 
   &--false {
     &::after {
       content: "";
+      box-sizing: border-box;
 
       position: absolute;
-      top: 0;
+      top: 5px;
       right: 40px;
       width: 150px;
       height: 150px;
@@ -47,12 +59,16 @@
 .carousel-reviews__text-block {
   width: 900px;
   padding-right: 100px;
-  padding-left: 10px;
+  padding-left: 17px;
+  padding-top: 10px;
 }
 
 .carousel-reviews__text {
+  margin: 0;
+  margin-bottom: 13px;
+
   font-size: 24px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: 400;
   font-style: italic;
   color: #999999;
@@ -60,18 +76,34 @@
 
 .carousel-reviews__author-avatar {
   margin-top: -23px;
-  margin-left: 47px;
+  margin-left: 78px;
 
   &--false {
-    margin-left: 128px;
+    margin-left: 152px;
     margin-top: 53px;
   }
 }
 
 .carousel-reviews__author-name {
+  position: relative;
+  padding-left: 70px;
+  margin: 0;
+
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   line-height: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    top: 15px;
+    left: 2px;
+
+    background-color: #f38181;
+  }
 }
 
 .carousel-reviews__previous {
@@ -79,8 +111,8 @@
   width: 25px;
   height: 25px;
   padding: 0;
-  top: 140px;
-  left: 0;
+  top: 128px;
+  left: 16px;
 
   font-size: 0;
 
@@ -119,8 +151,8 @@
   width: 25px;
   height: 25px;
   padding: 0;
-  top: 140px;
-  right: 0;
+  top: 128px;
+  right: 29px;
 
   font-size: 0;
 

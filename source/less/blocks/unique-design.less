@@ -11,7 +11,7 @@
   position: relative;
   width: @general-wrapper;
   margin: auto;
-  padding-top: 110px;
+  padding-top: 120px;
 
   text-align: center;
 }
@@ -21,17 +21,40 @@
 }
 
 .unique-design__heading {
-  .heading
+  position: relative;
+  margin: 0;
+  margin-bottom: 46px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -30px;
+
+    background-color: #f38181;
+  }
 }
 
 .unique-design__img-tablet {
   margin-bottom: -7px;
+  margin-left: -54px;
 }
 
 .unique-design__img-mobile {
   position: absolute;
-  bottom: -80px;
-  right: 217px;
+  bottom: -92px;
+  right: 231px;
 
   transition: transform ease 0.3s;
 

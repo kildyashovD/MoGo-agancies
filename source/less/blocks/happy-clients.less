@@ -20,5 +20,27 @@
 }
 
 .happy-clients__heading {
-  .heading
+  position: relative;
+  margin: 0;
+  margin-bottom: 126px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -30px;
+
+    background-color: #f38181;
+  }
 }
