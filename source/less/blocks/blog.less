@@ -1,7 +1,7 @@
 .blog__wrapper {
   width: @general-wrapper;
   margin: auto;
-  padding: 100px 0 118px 0;
+  padding: 110px 0 112px 0;
 
   text-align: center;
 }
@@ -11,11 +11,33 @@
 }
 
 .blog__heading {
-  .heading
+  position: relative;
+  margin: 0;
+  margin-bottom: 87px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -30px;
+
+    background-color: #f38181;
+  }
 }
 
 .page-footer__column .blog__heading {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   font-size: 14px;
   line-height: 24px;

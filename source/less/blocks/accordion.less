@@ -4,12 +4,10 @@
 
 .accordion__img-block {
   width: 50%;
-  padding-right: 30px;
 }
 
 .accordion__img {
-  height: 100%;
-  object-fit: cover;
+  margin-right: 32px;
 }
 
 .accordion__text-block {
@@ -23,7 +21,7 @@
   position: relative;
   width: 100%;
   margin-top: 10px;
-  padding: 25px 25px 25px 65px;
+  padding: 23px 25px 17px 56px;
 
   text-align: left;
   font-family: "Montserrat", sans-serif;
@@ -45,8 +43,8 @@
     content: "";
 
     position: absolute;
-    top: 22px;
-    right: 20px;
+    top: 18px;
+    right: 23px;
     width: 15px;
     height: 15px;
 
@@ -65,7 +63,7 @@
   }
 
   &--active::after {
-    top: 30px;
+    top: 26px;
     transform: rotate(135deg);
   }
 
@@ -74,8 +72,8 @@
       content: "";
 
       position: absolute;
-      top: 18px;
-      left: 20px;
+      top: 16px;
+      left: 12px;
       width: 32px;
       height: 32px;
 
@@ -91,8 +89,8 @@
       content: "";
 
       position: absolute;
-      top: 18px;
-      left: 20px;
+      top: 16px;
+      left: 12px;
       width: 32px;
       height: 32px;
 
@@ -108,8 +106,8 @@
       content: "";
 
       position: absolute;
-      top: 18px;
-      left: 20px;
+      top: 16px;
+      left: 12px;
       width: 32px;
       height: 32px;
 
@@ -126,9 +124,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 20px;
-  max-height: 156px;
+  max-height: 180px;
 
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   font-style: italic;
   color: #999999;
